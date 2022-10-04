@@ -2,6 +2,17 @@
 
 body{
     background-color: black;
+    color: white;
+
+}
+.page-index{
+    position: fixed;
+    font-family: "Outfit";
+    font-size: 120px;
+    font-weight:800;
+    color: rgb(9, 97, 175);
+    
+    margin-left: 20px;
 
 }
 
@@ -18,6 +29,7 @@ body{
     text-decoration: none;
 }
 .navbar-element {
+    margin-top: 35px;
     padding: 17px;
     
     
@@ -59,9 +71,9 @@ width: 100%;
 
 
 .content{
-    margin-top: 215px;
+    margin-top: 200px;
     z-index: 0;
-    position: relative;
+    position:absolute;
     width: 100%;
     outline: 3px solid white;
     height: 3000px;
