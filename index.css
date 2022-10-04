@@ -9,44 +9,79 @@ body{
 /*navbar*/
 .navbar_name{
     position: fixed;
-    font-family:'Outfit';
-    font-size: 100px;
     margin-top: -125px;
-    text-decoration: none;
-    
-    font-weight: bold;
+    z-index: 2;
     color: rgb(9, 97, 175);
     
     
 }
-.navbar{
-    position: fixed;
-    top: 15px;
-    display: flex ;
-    height: 75px;
-    width: 100%;
-   justify-content: right;
-    z-index: 1;
-    
+.navbar_name a{
+    font-family:'Outfit';
+    font-size: 100px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(9, 97, 175);
 }
 
-.navbar_about{
-    
+
+
+
+
+.about{
+    width: 210px;
     margin-top: -100px;
-    font-size: 50px;
-    font-family: 'Noto Sans Mono';
-    text-decoration: none;
-    padding: 17px;
-
+    position: fixed;
+    display: flex;
+    margin-left: 84%;
+    z-index: 2;
 }
-.navbar_contact{
+.about a{
     
-    margin-top: -10px;
+    position:inherit;
     font-size: 50px;
     font-family: 'Noto Sans Mono';
     text-decoration: none;
-    padding: 17px;
-   
+    color: rgb(9, 97, 175);
+}
+
+.about a:hover::after{
+    width: 0%;
+    position: absolute;
+    content: '';
+    height: 2px;
+    bottom: 10px; 
+    left: 0;
+    width:100%;
+    background: rgb(9, 97, 175);
+}
+
+
+
+
+.contact{
+    width: 210px;
+    margin-top: -100px;
+    position: fixed;
+    display: flex;
+    margin-left: 91%;
+    z-index: 2;
+}
+.contact a{
+    position:inherit;
+    font-size: 50px;
+    font-family: 'Noto Sans Mono';
+    text-decoration: none;
+    color: rgb(9, 97, 175);
+}
+.contact :hover::after{
+    width: 0%;
+    position: absolute;
+    content: '';
+    height: 2px;
+    bottom: 10px; 
+    left: 0;
+    width:100%;
+    background: rgb(9, 97, 175);
 }
 /*navbar-END*/
 
