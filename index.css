@@ -7,82 +7,48 @@ body{
 
 
 /*navbar*/
-.navbar_name{
+.navbar {
     position: fixed;
-    margin-top: -125px;
-    z-index: 2;
-    color: rgb(9, 97, 175);
-    
-    
-}
-.navbar_name a{
-    font-family:'Outfit';
-    font-size: 100px;
+    top: 0;
+    height: 75px;
+    width: 100%;
+    justify-content: right;
+    display:flex;
+    z-index: 1;
     text-decoration: none;
-    font-weight: bold;
-    color: rgb(9, 97, 175);
 }
-
-
-
-
-
-.about{
-    width: 210px;
-    margin-top: -100px;
-    position: fixed;
-    display: flex;
-    margin-left: 84%;
-    z-index: 2;
-}
-.about a{
+.navbar-element {
+    padding: 17px;
     
-    position:inherit;
+    
+}
+.navbar-element a{
     font-size: 50px;
     font-family: 'Noto Sans Mono';
-    text-decoration: none;
-    color: rgb(9, 97, 175);
+    text-decoration:none;
+    color: rgb(9, 97, 175); 
+    
+   
+    
+}
+.navbar-element ::after{
+display: inline-block;
+content:"";
+background-color: rgb(9, 97, 175);
+margin-left:0;
+top: -50px;
+width: 0%;
+height: 10px;
+position: relative;
+border-radius: 5px;
+
+transition: 0.5s;
 }
 
-.about a:hover::after{
-    width: 0%;
-    position: absolute;
-    content: '';
-    height: 2px;
-    bottom: 10px; 
-    left: 0;
-    width:100%;
-    background: rgb(9, 97, 175);
+.navbar-element :hover::after{
+width: 100%;
 }
 
-
-
-
-.contact{
-    width: 210px;
-    margin-top: -100px;
-    position: fixed;
-    display: flex;
-    margin-left: 91%;
-    z-index: 2;
-}
-.contact a{
-    position:inherit;
-    font-size: 50px;
-    font-family: 'Noto Sans Mono';
-    text-decoration: none;
-    color: rgb(9, 97, 175);
-}
-.contact :hover::after{
-    width: 0%;
-    position: absolute;
-    content: '';
-    height: 2px;
-    bottom: 10px; 
-    left: 0;
-    width:100%;
-    background: rgb(9, 97, 175);
-}
 /*navbar-END*/
 
 
@@ -93,11 +59,11 @@ body{
 
 
 .content{
-    margin-top: 115px;
+    margin-top: 215px;
     z-index: 0;
     position: relative;
     width: 100%;
-    outline: 3px solid green;
+    outline: 3px solid white;
     height: 3000px;
     
 }
