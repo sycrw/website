@@ -1,8 +1,13 @@
-
+@media (max-device-width:640px), screen and (max-width:640px) {
+    .page-index{
+    color: rgba(0, 42, 78, 0);    
+    }
+}
 
 body{
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     color: white;
+    overflow-x: hidden;
 
 }
 .page-index{
@@ -11,7 +16,7 @@ body{
     font-size: 120px;
     font-weight:800;
     color: rgb(9, 97, 175);
-    
+    z-index: 2;
     margin-left: 20px;
 
 }
@@ -74,11 +79,51 @@ width: 100%;
 
 
 .content{
-    margin-top: 200px;
     z-index: 0;
     position:absolute;
-    width: 100%;
-    outline: 3px solid white;
+    width: 99%;
+    outline: 3px solid rgba(255, 255, 255, 0);
     height: 3000px;
+    z-index: 0;
+    
+    
     
 }
+
+#sycrw{
+    
+    font-family:"Oswald";
+    font-size: 600px;
+    margin-top: 0px;
+    text-align: center;
+    position: relative;
+    margin-top: 200px;
+    height: 750px;
+    outline: 3px solid rgba(255, 255, 255,0);
+    
+}
+
+#sycrw_des {
+    position: relative;
+    text-align: center;
+    font-size: 27px;
+    font-family: 'Noto Sans Mono'; 
+    
+}
+.sycrw_des p{
+   margin-top: -30px;
+}
+
+.projects{
+    margin-top: 700px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    outline:solid  blue 3px;
+    height: 100vh;
+}
+.projects img{
+    width: 100%;
+}
+
