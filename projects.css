@@ -1,5 +1,7 @@
 body{
-    background-color: black;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    overflow-x: hidden;
 
 }
 .page-index{
@@ -8,7 +10,7 @@ body{
     font-size: 120px;
     font-weight:800;
     color: rgb(9, 97, 175);
-    
+    z-index: 2;
     margin-left: 20px;
 
 }
