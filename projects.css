@@ -4,16 +4,6 @@ body{
     overflow-x: hidden;
 
 }
-.page-index{
-    position: fixed;
-    font-family: "Outfit";
-    font-size: 120px;
-    font-weight:800;
-    color: rgb(9, 97, 175);
-    z-index: 2;
-    margin-left: 20px;
-
-}
 
 
 /*navbar*/
@@ -27,9 +17,20 @@ body{
     z-index: 1;
     text-decoration: none;
 }
+.page-index{
+    
+    font-family: "Outfit";
+    font-size: 120px;
+    font-weight:800;
+    color: rgb(9, 97, 175);
+    z-index: 2;
+   margin-right: auto;
+}
+
 .navbar-element {
     margin-top: 35px;
     padding: 17px;
+   
     
     
 }
@@ -64,3 +65,42 @@ width: 100%;
 }
 
 /*navbar-END*/
+
+#projects{
+display: grid;
+border: solid white 3px;
+height: 3000px;
+margin-top: 200px;
+justify-items:center;
+
+
+grid-auto-flow:row;
+grid-template-columns:50% 50%;
+grid-template-rows: repeat(3, 200px);
+grid-row-gap:50px;
+
+
+}
+#projects_item{
+display: flex;
+justify-content: center;
+align-content: center;
+box-shadow: 0 0 0 red;
+
+width:80%;
+height: 70%;
+transition: 0.1s;
+}
+
+#projects_item_link{
+text-decoration: none;
+height: 100%;
+
+color: rgb(9, 97, 175);
+font-size: 100px;
+text-align: center;
+margin-top: 10px;
+}
+#project_item_link :hover{
+    color: blue;
+}
