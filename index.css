@@ -40,18 +40,18 @@ body{
     font-size: 50px;
     font-family: 'Noto Sans Mono';
     text-decoration:none;
-    color: rgba(0, 42, 78, 0.841); 
+    color: rgb(9, 97, 175); 
     
    
     
 }
 .navbar-element a:hover{
-    color: rgb(9, 97, 175); 
+    color: rgb(21, 58, 205);
 }
 .navbar-element ::after{
 display: inline-block;
 content:"";
-background-color: rgb(9, 97, 175);
+background-color: rgb(21, 58, 205);
 margin-left:0;
 top: -50px;
 width: 0%;
