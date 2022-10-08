@@ -87,26 +87,26 @@ width: 100%;
 #sycrw{
     
     font-family:"Oswald";
-    font-size: 600px;
+    font-size: 43vmin;
     margin-top: 0px;
     text-align: center;
     position: relative;
     margin-top: 200px;
     height: 750px;
     outline: 3px solid rgba(255, 255, 255,0);
+    padding: 0;
     
 }
 
 #sycrw_des {
     position: relative;
     text-align: center;
-    font-size: 27px;
-    font-family: 'Noto Sans Mono'; 
+    font-size:2vmin;
+    font-family: 'Noto Sans Mono';
+    margin-top: 2vh; 
     
 }
-.sycrw_des p{
-   margin-top: -30px;
-}
+
 /*projects*/
 #projects{
    
