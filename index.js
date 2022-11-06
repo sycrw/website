@@ -1,11 +1,11 @@
 
-var tileSIZE = 50;
+var tileSIZE = 100;
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ){
-    tileSIZE = 10;
+    tileSIZE = 25;
 }
 const wrapper = document.getElementById("tiles");
-let columns = Math.floor(document.body.clientWidth/tileSIZE);
-let rows = Math.floor(document.body.clientHeight/tileSIZE);
+let columns = Math.round(document.body.clientWidth/tileSIZE);
+let rows = Math.round(document.body.clientHeight/tileSIZE);
 
 
 let bg = "";
