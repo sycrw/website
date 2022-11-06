@@ -21,9 +21,12 @@ function createTile(index){
     return tile;
 }
 function handleOnClick(index){
+    let test = document.getElementById("test");
+    test.style.backgroundColor = bg;
     console.log(index);
     count++;
     bg = colors[count %(colors.length-1)];
+
     anime({
         targets: ".tile",
         backgroundColor:bg,

@@ -1,0 +1,22 @@
+body {
+    background-color: black;
+}
+.tiles {
+    
+    display: grid;
+    height:100vh;
+    width: 120vw;
+    margin-left: -10%;
+    
+    grid-template-columns: repeat(var(--columns),1fr);
+    grid-template-rows: repeat(var(--rows),1fr);
+}
+.tile{
+    display: inline-block;
+
+}
+.test{
+    
+    height:100px;
+    background-color: white;
+}
