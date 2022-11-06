@@ -1,6 +1,13 @@
+
+var tileSIZE = 50;
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ){
+    tileSIZE = 10;
+}
 const wrapper = document.getElementById("tiles");
-let columns = Math.floor(document.body.clientWidth/100);
-let rows = Math.floor(document.body.clientHeight/100);
+let columns = Math.floor(document.body.clientWidth/tileSIZE);
+let rows = Math.floor(document.body.clientHeight/tileSIZE);
+
+
 let bg = "";
 const colors = [
     "rgb(148, 0, 211)",
@@ -23,7 +30,7 @@ function createTile(index){
 function handleOnClick(index){
     let test = document.getElementById("test");
     test.style.backgroundColor = bg;
-    console.log(index);
+    
     count++;
     bg = colors[count %(colors.length-1)];
 
@@ -44,20 +51,27 @@ function createTiles(quantity){
    
 }
 function createGrid(){
+    
     wrapper.innerHTML = "";
-    columns = Math.floor(window.innerWidth/100);
-    rows = Math.floor(window.innerHeight /100);
+    columns = Math.floor(window.innerWidth/tileSIZE);
+    rows = Math.floor(window.innerHeight /tileSIZE);
     wrapper.style.setProperty("--columns",columns);
     wrapper.style.setProperty("--rows",rows);
     createTiles(columns * rows);
+    console.log(rows);
+    console.log();
     
 }
+//eventlistener when resize
+window.onresize = () =>{
+    createGrid();
+}
+// first call wenn loaded
 
+createGrid();
+// load again to fix bug
 window.onload = function() {       
     setTimeout(function(){
-        console.log("test");
         createGrid();
     },50); 
 }
-window.onresize = () => createGrid();
-createTiles(columns * rows);

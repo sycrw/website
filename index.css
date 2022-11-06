@@ -13,6 +13,7 @@ body {
 }
 .tile{
     display: inline-block;
+    outline: white solid 1px;
 
 }
 .test{
