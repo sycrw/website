@@ -1,48 +1,45 @@
 
-var tileSIZE = 100;
+var tileSIZE =50;
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ){
-    tileSIZE = 25;
+    tileSIZE = 50;
 }
 const wrapper = document.getElementById("tiles");
-let columns = Math.round(document.body.clientWidth/tileSIZE);
-let rows = Math.round(document.body.clientHeight/tileSIZE);
+let columns,rows;
+document.getElementById("this_is_sycrw").style.opacity = 0;
+document.getElementById("open").style.opacity = 1;
 
-
-let bg = "";
-const colors = [
-    "rgb(148, 0, 211)",
-    "rgb(75, 0, 130)",
-    "rgb(0, 0, 255)",
-    "rgb(0, 255, 0)",
-    "rgb(255, 255, 0)",
-    "rgb(255, 127, 0)",
-    "rgb(255, 0 , 0)",
-    
-]
-let count = 0;
-
-function createTile(index){
-    const tile = document.createElement("div");
-    tile.classList.add("tile");
-    tile.onclick = () => handleOnClick(index);
-    return tile;
-}
+let toggled = false;
+//on click tile onimate
 function handleOnClick(index){
-    let test = document.getElementById("test");
-    test.style.backgroundColor = bg;
-    
-    count++;
-    bg = colors[count %(colors.length-1)];
-
+    toggled = !toggled;
+    anime({
+        targets: "#open",
+        opacity: toggled ? 0:1,
+        duration:7000
+    })
+    anime({
+        targets: "#this_is_sycrw",
+        opacity: toggled ? 1:0,
+        duration:7000
+    })
     anime({
         targets: ".tile",
-        backgroundColor:bg,
+        opacity: toggled ? 0:1,
         delay: anime.stagger(50,{
             grid: [columns,rows],
             from:index
         })
     });
 }
+//creates on tile to be passed on to create Tilesssss
+function createTile(index){
+    const tile = document.createElement("div");
+    tile.classList.add("tile");
+    tile.onclick = () => handleOnClick(index);
+    tile.style.opacity = toggled ? 0 : 1;
+    return tile;
+}
+//Create all tiles
 function createTiles(quantity){
     
     Array.from(Array(quantity)).map((tile, index) => {
@@ -50,6 +47,7 @@ function createTiles(quantity){
       });
    
 }
+// creates grid : calculates how many boxes are needed then gives it to create tiles
 function createGrid(){
     
     wrapper.innerHTML = "";
