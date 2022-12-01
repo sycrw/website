@@ -1,20 +1,99 @@
-body{
-    background:linear-gradient(to right,rgb(33, 105, 199),rgb(27, 77, 178));
+:root{
+    --col1 : rgb(213, 71, 31);
+    --col2 : rgb(239, 8, 20)
 }
-.navbar{
+body{
+    background-color: black;
+    overflow-x: hidden;
+    margin:0;
+    padding:0;
+}
+.navbar{    
     display: flex;
     justify-content: right;
-    padding-top: 0.5%;
-    padding-right: 1%;
+    padding-top: 1%;
+    padding-right: 2.5%;
+    position: relative;
+    right: auto;
 }
 .navbar_element{
-    
     padding-left:2%;
 }
 .navbar_element a{
-    color: grey;
+    color: var(--col1);
     font-family: "Outfit";
-    font-size: 40px;
+    font-size: 20px;
     text-decoration: none;
+}
+.title{
+    font-family: "Outfit";
+    font-weight: 800;
+    font-size: 40px;
+    background: linear-gradient(90deg,var(--col1),var(--col2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    box-shadow: 10px 10px 10px 10px black;
+}
+.top {
+    margin-top: -7%;
+    width: 100%;
+    position: fixed;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    z-index: 1;
+}
+.section{
+    width: 100%;
+    position: relative;
+    min-height: 200px;
+    padding: 100px 20vw;
+}
+.about{
+    background-color: var(--col1);
+    margin-top:8%;
+    display: flex;
+}
+.aboutText{
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: "Outfit";
+    width: 30%;
     
+}
+.AboutImg{
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 25%;
+    height:25%;
+}
+.curve{
+    position: absolute;
+    height: 200px;
+    width: 100%;
+    bottom: 0;
+}
+.curve::before{
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    transform: translate(45%, 60%);
+    background-color: black;
+}
+.curve::after{
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    background-color: var(--col1);
+    transform: translate(-44%, 40%);
+    z-index: -1;
+}
+.projects{
+    height: 1000px;
 }
