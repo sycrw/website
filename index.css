@@ -54,17 +54,16 @@ body{
     display: flex;
 }
 .aboutText{
-    margin-top: auto;
-    margin-bottom: auto;
+    margin-top: 1%;
     font-family: "Outfit";
     width: 30%;
     
 }
 .AboutImg{
-    margin-top: auto;
-    margin-bottom: auto;
-    width: 25%;
-    height:25%;
+    margin-top: 1%;
+    
+    width: 20%;
+    height:20%;
 }
 .curve{
     position: absolute;
