@@ -45,7 +45,7 @@ body{
 .section{
     width: 100%;
     position: relative;
-    min-height: 200px;
+    min-height: 300px;
     padding: 100px 20vw;
 }
 .about{
@@ -72,27 +72,49 @@ body{
     width: 100%;
     bottom: 0;
 }
-.curve::before{
-    content: '';
-    display: block;
+.custom-shape-divider-bottom-1669881479 {
     position: absolute;
-    border-radius: 100% 50%;
-    width: 55%;
-    height: 100%;
-    transform: translate(45%, 60%);
-    background-color: black;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
 }
-.curve::after{
-    content: '';
+
+.custom-shape-divider-bottom-1669881479 svg {
+    position: relative;
     display: block;
-    position: absolute;
-    border-radius: 100% 50%;
-    width: 55%;
-    height: 100%;
-    background-color: var(--col1);
-    transform: translate(-44%, 40%);
-    z-index: -1;
+    width: calc(100% + 1.3px);
+    height: 126px;
+}
+
+.custom-shape-divider-bottom-1669881479 .shape-fill {
+    fill: #000000;
 }
 .projects{
-    height: 1000px;
+    height: 500px;
+}
+.custom-shape-divider-bottom-1669881661 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1669881661 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 194px;
+}
+
+.custom-shape-divider-bottom-1669881661 .shape-fill {
+    fill: var(--col1);
+}
+.skills{
+    background-color: var(--col1);
 }
