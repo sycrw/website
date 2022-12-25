@@ -1,79 +1,61 @@
 :root{
-    --col1 : rgb(213, 71, 31);
-    --col2 : rgb(239, 8, 20)
+    --col1 : rgb(255, 255, 255);
 }
 body{
-    background-color: black;
+    background-color: rgb(100, 149, 237);
     overflow-x: hidden;
     margin:0;
     padding:0;
 }
-.top {
-    width: 100%;
+/*navabr*/
+.navbar_hidden{
+  opacity: 0;
+  display: flex;
     position: fixed;
-    display: grid;
-    grid-template-columns: 40% 60%;
-    z-index: 1;
+    justify-content: center;
+    right: 0;
+    transition: 100ms;
 }
-.navbar{    
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    padding-right: 2.5%;
-    position: relative;
-    right: auto;
+.navbar_shown{
+  opacity: 100%;
+  display: flex;
+  position: fixed;
+  justify-content: center; 
+  transition: 100ms;
+  right: 0;
 }
 .navbar_element{
-    padding-left:2%;
+    top: 30px;
+    padding-inline: 5%;
 }
 .navbar_element a{
-   background-color: grey; 
-   -webkit-background-clip: text;
-   background-clip: text;
-  -webkit-text-fill-color: transparent;
-    font-family: "Outfit";
-    font-size: 20px;
     text-decoration: none;
-    transition: 10ms;
+    color: var(--col1);
+    font-family: "Outfit";
+    font-size: 30px;
+    transition: 50ms ease-in-out;
 }
 .navbar_element a:hover{
-    background-color: var(--col1); 
+    font-size: 35px;
 }
-.navbar_element a::after{
-    display: block;
-    content: "";
-    background-color: grey;
-    margin-left: 0;
-    width:00%;
-    height: 1.5px;
-    border-radius: 5px;
-    transition: 0.3s;
+/*sections*/
+.about-section{
+  padding-top:5% ;
+  display: flex;
+  justify-content: space-around;
 }
-.navbar_element a:hover::after{
-    background-color: var(--col1);
-    width:100%;
+.about-section img{
+  max-width: 500px;
+  border-radius: 250px;
+  padding:5%;
 }
-.title{
-    font-family: "Outfit";
-    font-weight: 800;
-    font-size: 40px;
-    background: linear-gradient(90deg,var(--col1),var(--col2));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+.about-section div{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5%;
 }
+.about-section div a{
+  color:white;
 
-.section{
-    width: 100%;
-    position: relative;
-    min-height: 300px;
-    border: gray 0px solid;
-    top:50px;
-    display: flex;
-    justify-content: center;
-}
-.sectionTitle{
-    color: rgb(238, 238, 238);
-    font-family: "Outfit";
-    font-size: 2em;
 }
