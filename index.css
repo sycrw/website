@@ -38,7 +38,7 @@ body{
 }
 /*sections*/
 .about-section{
-  padding-top:5% ;
+  padding-top:7% ;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -54,6 +54,7 @@ body{
   justify-content: space-evenly;
   padding-inline: 3%;
 }
+
 .about-section div a{
   font-family: "Outfit";
   font-size: 20px;
@@ -71,4 +72,23 @@ body{
 .about-section div img{
   height: 50vh;
   border-radius: 25vh;
+}
+@media (max-width: 800px) {
+  .about-section div {
+    flex-direction: column;
+    padding-top: 1%;
+  }
+  .about-section div img{
+    height: 30vh;
+    width: 30vh;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .about-section{
+    padding-top: 10%;
+  }
+  .about-section div a{
+    margin-top: 2%;
+  }
+
 }
