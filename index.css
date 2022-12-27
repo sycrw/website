@@ -3,7 +3,7 @@
     --col2 :rgb(0, 0, 15);
     --col3: rgb(255, 40, 40);
     --boxColor:rgb(253, 100, 29,0.05);
-    --boxOutline: solid 1px rgba(128, 128, 128, 0.411);
+    --boxOutline: solid 1px var(--col3);
 }
 body{
     background-color: var(--col2);
@@ -104,14 +104,23 @@ body{
   text-align: center;
 }
 .projects{
-  margin-top: 20px;
+  margin: 20px;
   display: flex;
   justify-content: center;
   flex-wrap:wrap;
 }
 .projects_element{
-  background-color:green;
-  width: 100px;
-  height: 100px;
+  background-color:var(--boxColor);
+  border: var(--boxOutline);
+  width: 125px;
+  height: 125px;
   margin:2px;
+  border-radius: 20px;
+  
+}
+.projects_element img{
+  width: 105px;
+  height: 105px;
+  border-radius: 100px;
+  padding: 10px;
 }
