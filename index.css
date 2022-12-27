@@ -1,8 +1,8 @@
 :root{
     --col1 : rgb(255, 255, 255);
-    --col2 :rgb(100, 149, 237);
-    --col3: rgb(255, 127, 80);
-    --boxColor:rgb(100,100,100,0.2);
+    --col2 :rgb(0, 0, 15);
+    --col3: rgb(255, 40, 40);
+    --boxColor:rgb(253, 100, 29,0.05);
     --boxOutline: solid 1px rgba(128, 128, 128, 0.411);
 }
 body{
@@ -10,6 +10,13 @@ body{
     overflow-x: hidden;
     margin:0;
     padding:0;
+}
+/*general*/
+.section-title{
+  color:var(--col3);
+  font-family: "Outfit";
+  text-align: center;
+  font-size: 60px;
 }
 /*navabr*/
 .navbar{
@@ -36,19 +43,14 @@ body{
 .navbar_element a:hover{
     font-size: 35px;
 }
-/*sections*/
+/*about-sections*/
 .about-section{
   padding-top:7% ;
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
-.about-section a{
-  color:var(--col3);
-  font-family: "Outfit";
-  text-align: center;
-  font-size: 40px;
-}
+
 .about-section div{ 
   display: flex;
   justify-content: space-evenly;
@@ -91,4 +93,25 @@ body{
     margin-top: 2%;
   }
 
+}
+/*Projects*/
+.projects-section{
+  justify-content: center;
+  display: flex;
+  flex-direction: column;  
+}
+.projects-section a{
+  text-align: center;
+}
+.projects{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap:wrap;
+}
+.projects_element{
+  background-color:green;
+  width: 100px;
+  height: 100px;
+  margin:2px;
 }
