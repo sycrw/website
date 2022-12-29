@@ -1,7 +1,13 @@
 /*general*/
 :root{
     --col1 : rgb(0, 0, 0);
-    --col2 :rgb(216, 32, 207);
+    --col2 :rgb(137, 164, 223);
+}
+body{
+    background-color: var(--col1);
+    overflow-x: hidden;
+    margin:0;
+    padding:0;
 }
 .section-title{
     color:var(--col2);
@@ -15,4 +21,90 @@
     border: var(--col2)solid 2px;
     color:var(--col2);
     box-shadow: 2px 2px 10px var(--col2);
+  }
+
+  /*navabr*/
+.navbar{
+    margin-right: 50px;
+     width: 100%;
+     background-color: var(--col2);
+     display: flex;
+     position: fixed;
+     justify-content: right;
+     transition: 300ms ease-in-out;
+     padding: 0.5%;
+     top: 0;
+   }
+  
+  
+  
+  .navbar_element{
+      top: 30px;
+      padding-inline: 1%;
+  }
+  .navbar_element a{
+      text-decoration: none;
+      color: var(--col1);
+      font-family: "Outfit";
+      font-size: 30px;
+      transition: 50ms ease-in-out;
+  }
+  .navbar_element a:hover{
+      font-size: 35px;
+  }
+  .navbar button{
+    background:none;
+    border: none;
+    outline: none;
+    padding-right: 20px;
+    transition: 300ms ease-in-out;
+  }
+  .line-container {
+    width: 40px; 
+    height: 40px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .line {
+    width: 100%; 
+    height: 7px; 
+    background-color: var(--col1);
+  }
+  @media (max-width:1000px) {
+    .navbar{
+      flex-direction: column;
+      align-items: center;
+    }  
+    .navbar button{
+      padding-right: 0;
+    }
+  } 
+  .content{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    font-family: "Outfit";
+    flex-direction: column;
+  }
+  .content_title{
+    font-size: 150px;
+    color: var(--col2);
+    text-align: center;
+  }
+  .content_text{
+    font-size: 40px;
+    color: var(--col2);
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .content_img{
+    width: 60%;
+    height: 60%;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+    padding-bottom: 5%;
   }

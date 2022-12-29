@@ -69,3 +69,7 @@ function init(){
 function loadPiCalc(){
     window.location = "PiCalc.html";
 }
+//load Memes
+function loadMemes(){
+    window.location = "Memes.html";
+}
