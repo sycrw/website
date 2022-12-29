@@ -1,0 +1,18 @@
+/*general*/
+:root{
+    --col1 : rgb(0, 0, 0);
+    --col2 :rgb(216, 32, 207);
+}
+.section-title{
+    color:var(--col2);
+    font-family: "Outfit";
+    text-align: center;
+    font-size: 80px;
+    font-weight: 900;
+  }
+  .box{
+    background-color: var(--col1);
+    border: var(--col2)solid 2px;
+    color:var(--col2);
+    box-shadow: 2px 2px 10px var(--col2);
+  }

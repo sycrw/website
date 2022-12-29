@@ -1,37 +1,23 @@
-:root{
-    --col1 : rgb(10, 9, 9);
-    --col2 :rgb(39, 136, 188);
-}
 body{
     background-color: var(--col1);
     overflow-x: hidden;
     margin:0;
     padding:0;
 }
-/*general*/
-.section-title{
-  color:var(--col2);
-  font-family: "Outfit";
-  text-align: center;
-  font-size: 80px;
-  font-weight: 900;
-}
-.box{
-  background-color: var(--col2);
-  color:var(--col1);
-  box-shadow: 2px 2px 10px var(--col2);
-}
 /*navabr*/
 .navbar{
- margin-right: 50px;
-  width: 100%;
-  background-color: var(--col2);
-  display: flex;
-  position: fixed;
-  justify-content: right;
-  transition: 100ms;
-  padding: 0.5%;
-}
+  margin-right: 50px;
+   width: 100%;
+   background-color: var(--col2);
+   display: flex;
+   position: fixed;
+   justify-content: right;
+   transition: 300ms ease-in-out;
+   padding: 0.5%;
+   top: 0;
+ }
+
+
 
 .navbar_element{
     top: 30px;
@@ -52,11 +38,29 @@ body{
   border: none;
   outline: none;
   padding-right: 20px;
-
+  transition: 300ms ease-in-out;
 }
-.navbar button img{
-  width: 40px;
-  height: 40px;
+.line-container {
+  width: 40px; 
+  height: 40px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.line {
+  width: 100%; 
+  height: 7px; 
+  background-color: var(--col1);
+}
+@media (max-width:1000px) {
+  .navbar{
+    flex-direction: column;
+    align-items: center;
+  }  
+  .navbar button{
+    padding-right: 0;
+  }
 }
 /*about-sections*/
 .about-section{
@@ -74,10 +78,10 @@ body{
 
 .about-section div a{
   font-family: "Outfit";
-  font-size: 20px;
-  color:var(--col1);
+  font-size: 25px;
   height: auto;
-  margin-left: 5%;
+  width: 50%;
+
   padding: 2% 2% 2% 2%;
   text-align: center;
   margin-top: auto;
@@ -85,8 +89,11 @@ body{
   border-radius: 20px;
 }
 .about-section div img{
-  height: 50vh;
+  height: 600px;
   border-radius: 25vh;
+ 
+
+
 }
 @media (max-width:1000px) {
   .about-section div {
@@ -114,9 +121,6 @@ body{
   display: flex;
   flex-direction: column;  
 }
-.projects-section a{
-  text-align: center;
-}
 .projects{
   margin: 20px;
   display: flex;
@@ -128,9 +132,44 @@ body{
   height: 125px;
   margin:10px;
   border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   
 }
 .projects_element img{
+  width: 105px;
+  height: 105px;
+  padding: 10px;
+}
+.Projects_element_PI{
+  margin-top: -40px;
+  font-size: 200px;  
+}
+/*Skills*/
+.Skills-section{
+  margin-top: 100px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;  
+}
+.Skills{
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap:wrap;
+}
+.Skills_element{
+  width: 125px;
+  height: 125px;
+  margin:10px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.Skills_element img{
   width: 105px;
   height: 105px;
   padding: 10px;
