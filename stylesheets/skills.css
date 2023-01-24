@@ -1,0 +1,7 @@
+.Skills{
+    display: flex;
+    flex-direction: row;
+}
+.Skills_Element{
+    color: var(--col2);
+}
