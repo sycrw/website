@@ -15,16 +15,16 @@
 <body>
     <div class = "navbar" id = "navbar">
         <div class="navbar_element">
-            <a href="#About">About</a>
+            <a onclick="closeNavbar()" href="#About">About</a>
         </div>
         <div class = "navbar_element">
-            <a href="#Projects">Projects</a>
+            <a onclick="closeNavbar()" href="#Projects">Projects</a>
         </div>
         <div class = "navbar_element">
-            <a href="#Skills">Skills</a>
+            <a onclick="closeNavbar()" href="#Skills">Skills</a>
         </div>
         <div class = "navbar_element" >
-            <a href="#Cool-Stuff"> Cool Stuff</a>
+            <a onclick="closeNavbar()" href="#Cool-Stuff"> Cool Stuff</a>
         </div>
         <button onclick = "handleNavbarClick()" id = "navbarButton">
             <div class="line-container">
@@ -38,7 +38,7 @@
     <div class="about-section" id = "About">
         <a class = "section-title">About</a>
         <div>
-            <img src="/Assets/harald.png" alt="About image">
+            <img src="/Assets/tim.png" alt="About image">
             <a class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi doloremque consequatur 
             libero necessitatibus! Soluta nostrum corrupti maiores pariatur, saepe rerum 
             suscipit amet delectus officiis dolorum quasi, quia omnis tempora quis? Lorem ipsum dolor, sit
@@ -61,11 +61,26 @@
     <div class = "Skills-section" id="Skills">
         <a class = "section-title">Skills</a>
         <div class = "Skills">
-            <div class = "Skills_element box" onclick="loadPiCalc()">
+            <div class = "Skills_element box" onclick="">
                <img src="Assets/html-css-js.png" alt="">
             </div>
-            <div class = "Skills_element box" onclick="loadMemes()">
-                <img src="/Assets/logo.png" alt="">
+            <div class = "Skills_element box" onclick="">
+                <img src="/Assets/discord.png" alt="">
+            </div>
+            <div class = "Skills_element box" onclick="">
+                <img src="/Assets/unity.png" alt="">
+            </div>
+            <div class = "Skills_element box" onclick="">
+                <img src="/Assets/java.png" alt="">
+            </div>
+            <div class = "Skills_element box" onclick="">
+                <img src="/Assets/node.png" alt="">
+            </div>
+            <div class = "Skills_element box" onclick="">
+                <img src="/Assets/maraiadb.png" alt="">
+            </div>
+            <div class = "Skills_element box" onclick="">
+                <img src="/Assets/basics.png" alt="">
             </div>
         </div>
     </div>

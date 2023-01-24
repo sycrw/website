@@ -45,6 +45,12 @@ function handleNavbarClick(){
     
     navbarOn = !navbarOn;
 }
+//close navbar
+function closeNavbar(){
+    if(mobile){
+        handleNavbarClick();
+    }
+}
 //init
 function init(){
     let navbar = document.getElementById("navbar");

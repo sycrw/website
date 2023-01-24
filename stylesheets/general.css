@@ -74,6 +74,7 @@ body{
   }
   @media (max-width:1000px) {
     .navbar{
+      position:absolute;
       flex-direction: column;
       align-items: center;
     }  
