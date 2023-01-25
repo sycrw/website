@@ -70,6 +70,7 @@ function init(){
         navbarOn = true;
         mobile = false;
     }
+    window.scrollTo({top:0,behavior:"smooth"});
 }
 //load piCalc
 function loadPiCalc(){
@@ -78,4 +79,27 @@ function loadPiCalc(){
 //load Memes
 function loadMemes(){
     window.location = "Memes.html";
+}
+//scroll lto top
+console.log(window.scrollX);
+
+handleUpButton();
+window.addEventListener("scroll",handleUpButton);
+function handleUpButton(){
+    button = document.querySelector("#top-button");
+    console.log(scrollY);
+    if(window.scrollY<100){
+        button.style.right = "-20%";
+    }
+    else{
+        if(mobile){
+            button.style.right = "-0%";
+        }else{
+            button.style.right = "0.5%";
+        }
+    }
+}
+function up(){
+    window.scrollTo({top:0,behavior:"smooth"});
+    handleUpButton();
 }

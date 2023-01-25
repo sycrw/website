@@ -74,7 +74,11 @@
         font-size: 60px;
     }
     .underTitle{
-        font-size: 30px;
+        font-size: 35px;
+    }
+    .Skills_title{
+        font-size: 40px;
+        text-align: center;
     }
 }
 
@@ -89,6 +93,7 @@
     flex-wrap: wrap;
     width: 90%;
     margin: 1%;
+    
 }
 .GeneralKnowledge_elem{
     width: 100px;
@@ -97,6 +102,10 @@
     justify-content: center;
     margin: 0.5%;
     
+}
+.GeneralKnowladgeUnderTitle{
+        font-size: 20px;
+        text-align: center;
 }
 .GeneralKnowledge_elem img{
     width: 80px;

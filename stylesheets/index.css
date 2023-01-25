@@ -44,7 +44,7 @@ body{
   }
   .about-section div a{
     text-align: center;
-    font-size: 20px;
+    font-size: 15px;
     width: 80%;
     padding-top: 4%;
   }
@@ -60,8 +60,21 @@ body{
   .about-section div a{
     margin-top: 2%;
   }
-
+  .section-title{
+    font-size: 130px;
+  }
 }
+@media (max-width:800px) {
+  .section-title{
+    font-size: 100px;
+  }
+}
+@media (max-width:600px) {
+  .section-title{
+    font-size: 80px;
+  }
+}
+
 /*Projects*/
 .projects-section{
   margin-top: 100px;
