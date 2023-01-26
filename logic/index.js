@@ -19,4 +19,6 @@ function openMariaDB(){
 function openLinux(){
     window.location = "skills.html#linux"
 }
-
+function openGeneralSkills(){
+    window.location = "skills.html#gerneral"
+}

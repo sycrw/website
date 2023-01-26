@@ -95,33 +95,6 @@ html{
       padding-right: 0;
     }
   } 
-  .content{
-    margin-top: 100px;
-    display: flex;
-    justify-content: center;
-    font-family: "Outfit";
-    flex-direction: column;
-  }
-  .content_title{
-    font-size: 150px;
-    color: var(--col2);
-    text-align: center;
-  }
-  .content_text{
-    font-size: 40px;
-    color: var(--col2);
-    text-align: center;
-    margin-left: 10%;
-    margin-right: 10%;
-  }
-  .content_img{
-    width: 60%;
-    height: 60%;
-    display: block;
-  margin-left: auto;
-  margin-right: auto;
-    padding-bottom: 5%;
-  }
   .top_button{
     width: 70px;
     height: 70px;
