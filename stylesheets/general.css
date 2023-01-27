@@ -2,6 +2,7 @@
 :root{
     --col1 : rgb(0, 0, 0);
     --col2 :rgb(58, 151, 233);
+    --col3: rgb(58, 58, 62);
 }
 body{
     background-color: var(--col1);
@@ -34,67 +35,67 @@ html{
     border-radius: 20px;
   }
 
-  /*navabr*/
+   /*navabr*/
 .navbar{
-    margin-right: 50px;
-     width: 100%;
-     background-color: var(--col2);
-     display: flex;
-     position: fixed;
-     justify-content: right;
-     transition: 300ms ease-in-out;
-     padding: 0.5%;
-     top: 0;
-     z-index: 10;
-   }
-  
-  
-  
-  .navbar_element{
-      top: 30px;
-      padding-inline: 1%;
-  }
-  .navbar_element a{
-      text-decoration: none;
-      color: var(--col1);
-      font-family: "Outfit";
-      font-size: 30px;
-      transition: 50ms ease-in-out;
-  }
-  .navbar_element a:hover{
-      font-size: 35px;
-  }
-  .navbar button{
-    background:none;
-    border: none;
-    outline: none;
-    padding-right: 20px;
-    transition: 300ms ease-in-out;
-  }
-  .line-container {
-    width: 40px; 
-    height: 40px; 
-    display: flex;
+  margin-right: 50px;
+   width: 100%;
+   background-color: var(--col2);
+   display: flex;
+   position: fixed;
+   justify-content: right;
+   transition: 300ms ease-in-out;
+   padding: 0.5%;
+   top: 0;
+   z-index: 10;
+ }
+
+
+
+.navbar_element{
+    top: 30px;
+    padding-inline: 1%;
+}
+.navbar_element a{
+    text-decoration: none;
+    color: var(--col1);
+    font-family: "Outfit";
+    font-size: 30px;
+    transition: 50ms ease-in-out;
+}
+.navbar_element a:hover{
+    font-size: 35px;
+}
+.navbar button{
+  background:none;
+  border: none;
+  outline: none;
+  padding-right: 20px;
+  transition: 300ms ease-in-out;
+}
+.line-container {
+  width: 40px; 
+  height: 40px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.line {
+  width: 100%; 
+  height: 7px; 
+  background-color: var(--col1);
+  outline: solid black 1px;
+}
+@media (max-width:1000px) {
+  .navbar{
+    position:absolute;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
+  }  
+  .navbar button{
+    padding-right: 0;
   }
-  
-  .line {
-    width: 100%; 
-    height: 7px; 
-    background-color: var(--col1);
-    outline: solid black 1px;
-  }
-  @media (max-width:1000px) {
-    .navbar{
-      position:absolute;
-      flex-direction: column;
-      align-items: center;
-    }  
-    .navbar button{
-      padding-right: 0;
-    }
-  } 
+} 
   .top_button{
     width: 70px;
     height: 70px;
@@ -127,4 +128,38 @@ html{
       height: 50px;
     }
   }
-  
+  /*foooter*/
+  footer {
+    background-color: var(--col3);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 20px;
+    color: var(--col2);
+  }
+  footer div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer div a{
+    font-size: 60px;
+    font-family: "Outfit";
+  }
+  footer div div a{
+    font-size: 30px;
+    font-family: "Outfit";
+  }
+  .link{
+    font-size: 20px;
+    color: var(--col1);
+  }
+  .ConatactElem{
+    font-size: 20px;
+    color: var(--col1);
+    text-align: center;
+  }
+  @media (max-width:1000px) {
+    footer{
+      grid-template-columns: 100%;
+    }
+  }
