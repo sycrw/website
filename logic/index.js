@@ -22,3 +22,7 @@ function openLinux(){
 function openGeneralSkills(){
     window.location = "skills.html#gerneral"
 }
+function loadCraig(){
+    console.log("open github");
+    window.location = "https://github.com/sycrw/craig";
+}
