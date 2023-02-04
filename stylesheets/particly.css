@@ -1,0 +1,9 @@
+.particly_img{
+    width: 30%;
+}
+@media (max-width:1000px){
+    .particly_img{
+        width: 70%;
+    }
+    
+}
