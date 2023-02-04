@@ -1,6 +1,9 @@
-# Sycrw
+# My Personal Website
+This is my personal Portfolio Website, with all my skills and Projects.
+You can find it here: https://sycrw.ga
 
-<!---
-sycrw/sycrw is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+---
+### Copyright
+You can use all code in this repo as you like. Mentions are always appreciated!
+
+Please write me if you want to use the images(contact on website) 
