@@ -8,8 +8,7 @@ body{
     background-color: var(--col1);
     overflow-x: hidden;
     margin:0;
-    padding:0;
-    
+    padding:0;   
 }
 html{
   scroll-behavior: smooth;
@@ -64,7 +63,8 @@ html{
     font-weight: 100;
 }
 .navbar_element a:hover{
-    
+    font-weight: 600;
+    font-size: 34px;
 }
 .navbar button{
   background:none;
@@ -96,6 +96,7 @@ html{
   .navbar button{
     padding-right: 0;
   }
+  
 } 
   .top_button{
     width: 70px;
@@ -129,42 +130,6 @@ html{
       height: 50px;
     }
   }
-  /*foooter*/
-  footer {
-    background-color: var(--col3);
-    display: grid;
-    grid-template-columns: 50% 50%;
-    padding: 20px;
-    color: var(--col2);
-    margin-bottom: 0;
-  }
-  footer div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  footer div a{
-    font-size: 60px;
-    font-family: "Outfit";
-  }
-  footer div div a{
-    font-size: 30px;
-    font-family: "Outfit";
-  }
-  .link{
-    font-size: 20px;
-    color: var(--col1);
-  }
-  .ConatactElem{
-    font-size: 20px;
-    color: var(--col1);
-    text-align: center;
-  }
-  @media (max-width:1000px) {
-    footer{
-      grid-template-columns: 100%;
-    }
-  }
   /*projects*/
   .content{
     display: flex;
@@ -182,7 +147,7 @@ html{
     font-family: "Outfit";
     padding-inline: 0.2%;
     font-size: 25px;
-    text-align: left;
+    text-align: center;
     color: var(--col2);
     padding-bottom: 1%;
 }
@@ -216,4 +181,5 @@ html{
     .content_h2{
         font-size: 40px;
     }
+    
 }

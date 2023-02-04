@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,114 +12,162 @@
     <script src="logic/mainLogic.js" defer></script>
     <script src="logic/skills.js"></script>
 </head>
+
 <body>
-    <div class = "navbar" id = "navbar">
+    <div class="navbar" id="navbar">
         <div class="navbar_element">
             <a href="index.html#About">About</a>
         </div>
-        <div class = "navbar_element">
+        <div class="navbar_element">
             <a href="index.html#Projects">Projects</a>
         </div>
-        <div class = "navbar_element">
+        <div class="navbar_element">
             <a href="index.html#Skills">Skills</a>
         </div>
-        <div class = "navbar_element" >
-            <a href="index.html#Cool-Stuff"> Cool Stuff</a>
+        <div class="navbar_element">
+            <a href="index.html#Contact">Contact</a>
         </div>
-        <button onclick = "handleNavbarClick()" id = "navbarButton">
+        <div class="navbar_element">
+            <a onclick="closeNavbar()" href="/blog.html">Blog</a>
+        </div>
+        <button onclick="handleNavbarClick()" id="navbarButton">
             <div class="line-container">
-                <div class="line" id = "line1"></div>
-                <div class="line"id = "line2"></div>
-                <div class="line"id = "line3"></div>
-              </div>
+                <div class="line" id="line1"></div>
+                <div class="line" id="line2"></div>
+                <div class="line" id="line3"></div>
+            </div>
         </button>
     </div>
-  <!--top button-->
-  <div class = "top_button" id = "top-button">
-    <img src="Assets/arrow.png" alt="" onclick="up()">
-</div>
-    <div class = "Skills">
+    <!--top button-->
+    <div class="top_button" id="top-button">
+        <img src="Assets/arrow.png" alt="" onclick="up()">
+    </div>
+    <div class="Skills">
         <a class="title">Skills</a>
-        <div class = "Skills_Element box" id = "web">
-            <a class = "Skills_title">Web Development</a>
+        <div class="Skills_Element box" id="web">
+            <a class="Skills_title">Web Development</a>
             <div class="Skills_Content">
-                <a class = "Skills_txt">Having my own website was one of my bigger goals when i started to get into programming. But ist still took some time till i started. After whatching a youtube tutorial i actually biuld a very basic website, but was overwhelmed and lost motivation. After a while i got back into, because me and a friend were planing to make a small social media app. This app never came into existince but it gave me motivation to start doing more in basic html css and js. After this i was approched by my friend who was planing to start particly. This was a very nice "full cirlce" moment, since i saw that learning this had somewhat payed of. And yes fun fact Particly is biuld with plain web thechnologies. For more towards Particly you can check i tout in the projects tab.</a>
-                <img class = "Skills_img"src="Assets/html-css-js.png" alt="png">
+                <a class="Skills_txt">Creating my own website was one of my bigger goals when I started to get into
+                    programming. After watching a YouTube tutorial I actually built a very basic
+                    website but I was overwhelmed and lost motivation. After a while I got back
+                    into it because a friend and me were planning to create a small social media
+                    app. This app never came into existence but it provided motivation to start
+                    doing more in basic HTML, CSS and JS. Shortly after I was approached by a
+                    friend who was planning to start “Particly”. This was a genuinely nice &quot;full
+                    circle&quot; moment, since I recognized, that learning to code had somewhat paid
+                    off. And yes, fun fact, Particly is built with plain web technologies. For more
+                    information about Particly you can check it out in the project tab.</a>
+
+                <img class="Skills_img" src="Assets/html-css-js.png" alt="png">
             </div>
         </div>
-        <div class = "Skills_Element box" id = "discord">
-            <a class = "Skills_title">Discord.js</a>
+        <div class="Skills_Element box" id="discord">
+            <a class="Skills_title">Discord.js</a>
             <div class="Skills_Content">
-                <a class = "Skills_txt">Discord.js is a node.js libary for discord bots. This came into mind when i wanted to make a discord bot for the particly website to improve workflow. For example I wanted to be able to access chat gpt from discord, but after i found out that the apis were not generaly accasable, i switched and started to make a game bot. More about that game bot you can find in my github, or in the projects tab.</a>
-                <img class = "Skills_img"src="Assets/discord.png" alt="png">
+                <a class="Skills_txt">Discord.JS is a Node.JS library for discord bots. This came into my mind when I
+                    wanted to make a discord bot for the Particly website to improve the workflow.
+                    For example, I wanted to be able to access ChatGPT from discord, but after I
+                    found out, that the APIs were not generally accessible, I switched and started
+                    to make a game bot. More about that game bot you can find in my github, or in
+                    the project tab.</a>
+                <img class="Skills_img" src="Assets/discord.png" alt="png">
             </div>
         </div>
-        <div class = "Skills_Element box" id = "unity">
-            <a class = "Skills_title">Unity</a>
+        <div class="Skills_Element box" id="unity">
+            <a class="Skills_title">Unity</a>
             <div class="Skills_Content">
-                <a class = "Skills_txt">Unity was my first real expirience with programming. I had expirimented with Scratch, because my Uncle gave my a Sratch and paython book, but i never reacht the python section. but anyways, one day i was sitting at home during lockdown and was bored out of my mind, so i decided how to learn how to make a game. The first youtube video that pop up was the "How to make a game" Series from brackeys, so i followed it. This really sparked my love for programming as i saw what could be created and imagined the endless posibilitys. So i went on to biuld a few games with Unity and the C' language. But after some time i moved away from it. While creating thi spage i went to find my old games, sadly they were all corrupted. So to have some Unity project in the site a reprogrammed my first game with unity "hexagame", which you can find in the projects tab. It really brought up much joy and good memories.   </a>
-                <img class = "Skills_img"src="Assets/unity.png" alt="png">
+                <a class="Skills_txt">
+                    Unity was my first real experience with programming. I had worked with
+                    Scratch, because my Uncle gave me a Scratch and Python book, but I never
+                    reached the Python section but anyways. One day I was sitting at home during
+                    lockdown and was bored out of my mind, so I decided to learn how to create a
+
+                    game. The first YouTube video that popped up was the &quot;How to make a game&quot;
+                    Series from “Brackeys”, so I followed it. This really sparked my love for
+                    programming as I saw what could be created and imagined the endless
+                    possibilities in this field. So, I built a few games with Unity and the C# language.
+                    While creating this page I went to find my old games, sadly they were all
+                    corrupted. To have some Unity project on the site I programmed my first game
+                    with unity &quot;Hexagame&quot; again, which you can find in the projects tab. It really
+                    brought a lot of joy and good memories.
+                </a>
+                <img class="Skills_img" src="Assets/unity.png" alt="png">
             </div>
         </div>
-        <div class = "Skills_Element box" id = "java">
-            <a class = "Skills_title">Java</a>
+        <div class="Skills_Element box" id="java">
+            <a class="Skills_title">Java</a>
             <div class="Skills_Content">
-                <a class = "Skills_txt">I know Java beacause we learn it in school. In 10th grade we had to make a game with Processing(Java), which you can find in the Projects tab. Futhermore i am currently learning it in school.</a>
-                <img class = "Skills_img"src="Assets/java.png" alt="png">
+                <a class="Skills_txt">I know Java because we learned it in school. In 10th grade we also had to make a
+                    game with Processing(Java).
+                    Furthermore, I am still currently learning it in school.</a>
+                <img class="Skills_img" src="Assets/java.png" alt="png">
             </div>
         </div>
-        <div class = "Skills_Element box" id = "node.js">
-            <a class = "Skills_title">Node.JS</a>
+        <div class="Skills_Element box" id="node.js">
+            <a class="Skills_title">Node.JS</a>
             <div class="Skills_Content">
-                <a class = "Skills_txt">So node i leared recently, because the whole particly backend is writting in node. I also use it, as metioned above, to construct my discord bots. Node was the first real backend language i learend, and i really enjoy it. Also the feeling from running your first server is just to great.</a>
-                <img class = "Skills_img"src="Assets/node.png" alt="png">
+                <a class="Skills_txt">NodeJS I learned recently, because the whole Particly backend is written in
+                    node. I also use it, as mentioned above, to construct my Discord bots. Node
+                    was the first real backend language I learned, and I really enjoy it. Also, the
+                    feeling of operating your first server is just great.</a>
+                <img class="Skills_img" src="Assets/node.png" alt="png">
             </div>
         </div>
-        <div class = "Skills_Element box" id = "mariaDB">
-            <a class = "Skills_title">MariaDB</a>
+        <div class="Skills_Element box" id="mariaDB">
+            <a class="Skills_title">MariaDB</a>
             <div class="Skills_Content">
-                <a class = "Skills_txt">Just basiclly my go to database, since its relational database and is biult on mySql2. Therefore it supports normal SQL and the other feutures.</a>
-                <img class = "Skills_img"src="Assets/maraiadb.png" alt="png">
+                <a class="Skills_txt">Just basically my go-to database since it’s a relational database and is built on
+mySql2. Therefore it supports normal SQL and the other features.</a>
+                <img class="Skills_img" src="Assets/maraiadb.png" alt="png">
             </div>
         </div>
-        <div class = "Skills_Element box" id = "linux">
-            <a class = "Skills_title">Linux</a>
+        <div class="Skills_Element box" id="linux">
+            <a class="Skills_title">Linux</a>
             <div class="Skills_Content">
                 <div>
-                    <a class = "underTitle">Arch</a>
-                    <a class = "Skills_txt">Arch is my daily OS. So why am i not using Windows, like everybody else. 
-                        Well first of all i find windows has just transformed into a bloated mess. So a friend(<div onclick="openHarald()" style="display: inline; text-decoration: underline;cursor: pointer;">Luis</div>) told 
-                    me, how little ram his linux laptop was using in idle. I noticed this was 1/8th of what my 
-                    windows PC was using, so i knew that something had to be done. I istalled debian with xfce 
-                    and was supriesed by the control i hade. My Pc didnt take years to boot up and everything 
-                    was so clean. Of course the first few weeks were different, but know that i am used to it i
-                     can confidently say, that i only use Windows to do GPU intesive things. Plus Linux just 
-                     improves my workflow and boosts my productivity, since everthing is so quickly accesible 
-                     trough the terminal. A few month after my friend introduced me to linux, i saw that he was 
-                     using GNOME and i found that destop enviorment very very clean. So i tried to install it but
-                      noticed, that a lot of applications came with it and that was just to much. It also compromised 
-                      the reason why i switched to linux. I wanted to get rid of the bloat. But after some more discuission
-                       and research with my <div onclick="openHarald()" style="display: inline; text-decoration: underline;cursor: pointer;">friend</div> we found out that while installing arch, you could chosse to not install 
-                       all of these applications. This was great, puls it was a major breath of fresh air, escaping debians 
-                       reposotorys and using archs user repos. Since then i have been on Arch Linux.    </a>
+                    <a class="underTitle">Arch</a>
+                    <a class="Skills_txt">Arch is my daily OS. So why am I not using Windows, like everybody else? Well
+                        first of all I found Windows has just transformed into a huge and complex
+                        solution, that needs a lot of RAM . So, a friend(<div
+                            onclick="openHarald()" style="display: inline; text-decoration: underline;cursor: pointer;">
+                            Luis</div>)told me, how little ram his Linux
+                            laptop was using in idle. I noticed this was 1/8th of what my windows PC was
+                            using, so I understood that something had to be done. I installed Debian with
+                            xfce and was surprised by the control I had gained. My PC didn’t take years to
+                            boot up and everything was so clean. Of course, the first few weeks were
+                            different, but knowing that I am get used to it. I can confidently say that I only
+                            use Windows to do GPU intensive things. Plus, Linux just improves my
+                            workflow and boosts my productivity, since everything is so quickly accessible
+                            through the terminal. A few months after my friend introduced me to Linux, I
+                            noticed, that the GNOME desktop environment is very clean. So I tried to install
+                            it, but found out, that a lot of applications came with it and that was just too
+                            much. It also compromised the reason I switched to Linux. I wanted to get rid
+                            of the bloat. But after some more discussion and research I learned that found
+                            out that while installing arch, you could choose to not install all of these
+                            
+                            applications. This was great, plus it was a major breath of fresh air, escaping
+                            Debian’s repositories and using arch user repos. Since then, I have been on
+                            Arch Linux.</a>
                 </div>
-                <img class = "Skills_img"src="Assets/arch.png" alt="png">
+                <img class="Skills_img" src="Assets/arch.png" alt="png">
             </div>
             <div class="Skills_Content">
                 <div>
-                    <a class = "underTitle">Debian</a>
-                    <a class = "Skills_txt">As i already mentioned Debian was my first linux OS. 
-                        I am very thankful that i had spent some time there, since most of the worlds Servers 
-                        run on debian. Exactly like thes servers me and <div onclick="openHarald()" style="display: inline; text-decoration: underline;cursor: pointer;">Luis</div> set up some servers in our school also 
-                        running on debian. Therfore this was farly easy on the PC side. It also provided a important 
-                        stepping stone from Windows to Arch. With out it i would have probably fallend back into windows hell.  </a>
+                    <a class="underTitle">Debian</a>
+                    <a class="Skills_txt">Debian - as I already mentioned Debian was my first Linux OS. I am very
+                        thankful that I had spent some time there, since most of the world’s
+                        servers run on Debian. Exactly like the servers my friend and me  set up
+                        in our school also running on Debian. Therefore, this was easy on the
+                        PC side. It also provided an important step-stone from Windows to Arch.
+                        Without it I would have probably stepped back into Windows “hell.” </a>
                 </div>
-                <img class = "Skills_img"src="Assets/debian.png" alt="png">
+                <img class="Skills_img" src="Assets/debian.png" alt="png">
             </div>
         </div>
-        <div class = "Skills_Element box" id = "gerneral">
-            <a class = "Skills_title">General PC Knowlage</a>
-            <a class="GeneralKnowladgeUnderTitle">Basic Knowledge: I can use them effectivly but have no i depth knowlage</a>
+        <div class="Skills_Element box" id="gerneral">
+            <a class="Skills_title">General PC Knowlage</a>
+            <a class="GeneralKnowladgeUnderTitle">Basic Knowledge: I can use them effectivly but have no i depth
+                knowlage</a>
             <div class="GeneralKnowledge">
                 <div class="GeneralKnowledge_elem box">
                     <img src="Assets/msoffice.png" alt="">
@@ -133,8 +182,10 @@
                     <img src="Assets/github_white.png" alt="">
                 </div>
             </div>
-            
+
         </div>
-    </div>    
+    </div>
+
 </body>
+
 </html>

@@ -149,3 +149,69 @@ body{
   padding: 10px;
   border-radius: 20px;
 }
+/*HEXogon*/
+.hexagon{
+  font-size: 130px;
+  text-align: center;
+  margin-top: 40px;
+}
+.Contact-section{
+  margin-top: 100px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;  
+  
+  
+}
+.Contact-section div{
+ display: flex;
+ justify-content: center;
+ flex-wrap: wrap;
+}
+.Contact-section div div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 150px;
+  padding: 10px;
+  margin: 10px;
+  max-width: 500px;
+ }
+.Contact-title{
+  color: var(--col2);
+  font-size: 50px;
+  font-family: "Outfit";
+  text-decoration: none;
+  text-align: center;
+}
+.Contact-text{
+  color: var(--col2);
+  font-size: 25px;
+  text-decoration: underline;
+  font-family: "Outfit";
+  text-align: center;
+}
+@media (max-width:600px) {
+  .Contact-section div div{
+    
+    height: 100px;
+    padding: 5px;
+    margin: 5px;
+    max-width: 300px;
+   }
+  .Contact-title{
+    color: var(--col2);
+    font-size: 30px;
+    font-family: "Outfit";
+    text-decoration: none;
+    text-align: center;
+  }
+  .Contact-text{
+    color: var(--col2);
+    font-size: 17px;
+    text-decoration: underline;
+    font-family: "Outfit";
+    text-align: center;
+  }
+}
