@@ -26,3 +26,6 @@ function loadCraig(){
     console.log("open github");
     window.location = "https://github.com/sycrw/craig";
 }
+function openParticly(){
+    window.location = "particly.html";
+}

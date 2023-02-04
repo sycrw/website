@@ -14,7 +14,8 @@
     font-family: "Outfit";
     padding-inline: 0.2%;
     font-size: 25px;
-    text-align: center;
+    text-align: left;
+    color: var(--col2);
 }
 .content_img{
     width:60%;

@@ -135,6 +135,7 @@ html{
     grid-template-columns: 50% 50%;
     padding: 20px;
     color: var(--col2);
+    margin-bottom: 0;
   }
   footer div{
     display: flex;
@@ -163,3 +164,21 @@ html{
       grid-template-columns: 100%;
     }
   }
+  /*projects*/
+  @media (max-width:1000px) {
+    .content{
+        margin-top: 0% !important;
+    }
+    .content_title{
+        font-size: 70px;
+    }
+    .content_text{
+        font-size: 20px;
+    }
+    .particly_img{
+        width: 70%;
+    }
+    .content_h2{
+        font-size: 40px;
+    }
+}
