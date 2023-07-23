@@ -5,9 +5,19 @@ import { useEffect } from "react";
 
 const Header = () => {
   useEffect(() => {
+    //if client is using a touch screen or the screen is to small, then redirect to /me
+    if (
+      window.innerWidth < 800 ||
+      "ontouchstart" in window ||
+      navigator.maxTouchPoints
+    ) {
+      window.location.href = "/me";
+    }
+
     const gallery = document.querySelector(".gallery");
 
-    window.onmousemove = (e) => {
+    function handleMouseEnter(e: MouseEvent) {
+      console.log("mouse move");
       const mouseX = e.clientX,
         mouseY = e.clientY;
 
@@ -30,6 +40,13 @@ const Header = () => {
           easing: "ease",
         }
       );
+    }
+
+    window.onmousemove = (e) => {
+      handleMouseEnter(e);
+    };
+    window.ontouchmove = (e) => {
+      handleMouseEnter(new MouseEvent(e));
     };
   }, []);
 
@@ -41,6 +58,15 @@ const Header = () => {
       </a>
       <a className="card" href="https://music-analyzer.tech">
         <img src="/music-analyzer.png" alt="" />
+      </a>
+      <a className="card" href="/me#about">
+        <p>About</p>
+      </a>
+      <a className="card" href="/me#projects">
+        <p>Projects</p>
+      </a>
+      <a className="card" href="/me#skills">
+        <p>skills</p>
       </a>
     </div>
   );
