@@ -6,15 +6,11 @@ import { useEffect } from "react";
 const Header = () => {
   useEffect(() => {
     //if client is using a touch screen or the screen is to small, then redirect to /me
-    if (
-      window.innerWidth < 800 ||
-      "ontouchstart" in window ||
-      navigator.maxTouchPoints
-    ) {
+    if (window.innerWidth < 800) {
       window.location.href = "/me";
     }
 
-    const gallery = document.querySelector(".gallery");
+    const gallery: any = document.querySelector(".gallery");
 
     function handleMouseEnter(e: MouseEvent) {
       console.log("mouse move");
@@ -24,7 +20,7 @@ const Header = () => {
       const xDecimal = mouseX / window.innerWidth,
         yDecimal = mouseY / window.innerHeight;
 
-      const maxX = gallery!.offsetWidth - window.innerWidth,
+      const maxX = gallery.offsetWidth - window.innerWidth,
         maxY = gallery.offsetHeight - window.innerHeight;
 
       const panX = maxX * xDecimal * -1,
@@ -41,12 +37,9 @@ const Header = () => {
         }
       );
     }
-
+    handleMouseEnter(new MouseEvent("mousemove"));
     window.onmousemove = (e) => {
       handleMouseEnter(e);
-    };
-    window.ontouchmove = (e) => {
-      handleMouseEnter(new MouseEvent(e));
     };
   }, []);
 

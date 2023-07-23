@@ -6,7 +6,6 @@ body{
   background-color: rgb(10, 10, 10);
   height: 100vh;  
   margin: 0px;
-  overflow: hidden;
 }
 
 .gallery{
@@ -25,6 +24,7 @@ body{
 .card:hover {
   transform: scale(1.1);
   z-index: 10;
+  @apply border-main;
 }
 
 .card:hover > img {
@@ -66,7 +66,7 @@ body{
     transform 800ms ease;
 }
 .card:not(:has(img)):hover {
-  background-color: rgb(255,255,255)
+  @apply bg-main;
 }
 
 
