@@ -50,7 +50,7 @@ const Header = () => {
         <p>Learn More About Me</p>
       </a>
       <a className="card" href="https://music-analyzer.tech">
-        <img src="/music-analyzer.png" alt="" />
+        <img src="/Music-Analyzer.png" alt="" />
       </a>
       <a className="card" href="/me#about">
         <p>About</p>
